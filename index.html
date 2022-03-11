@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>popmovies</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                font-family: "Lato", sans-serif
+            }
+
+            .mySlides {
+                display: none
+            }
+        </style>
+        <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+    </head>
+    <hr>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+                href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                    class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">sign in</a>
+            <a href="#popmovies" class="w3-bar-item w3-button w3-padding-large w3-hide-small">movies</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">contact</a>
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                </div>
+            </div>
+            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i
+                    class="fa fa-search"></i></a>
+        </div>
+    </div>
+
+
+   
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+        <div class="mySlides ">
+            <img src="https://cdn.shopify.com/s/files/1/1416/8662/products/interstellar_2014_italian_2_fogli_teaser_original_film_art_1200x.jpg?v=1584820809" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3>interstellar</h3>
+                <p><b>featured by christopher nolan</b></p>
+                <a href="./INTERSTELLAR.HTML"></a>
+            
+            </div>
+        </div>
+        <div class="mySlides">
+            <img src="https://th.bing.com/th/id/OIP.cGorAxyLNAGbx9mgR3TcRwHaNK?pid=ImgDet&rs=1" style="width: 100%">
+            <div class="">
+                <h3>batman</h3>
+                <p><b>The dark knight arkham</b></p>
+                <a href="./BATMAN.HTML"></a>
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="https://www.newdvdreleasedates.com/images/posters/venom-2-2020.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3>Venom: Let There Be Carnage</h3>
+                <p><b> Let There Be Carnage</b></p>
+                <a href="./VENOM2.HTML"></a>
+            </div>
+        </div>
+
+        
+
+      
+        <div class="w3-black" id="tour">
+            <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        
+                <p class="w3-opacity w3-center"><i>HAVE A GREAT TIME!</i></p><br>
+
+                <ul class="w3-ul w3-border w3-white w3-text-grey">
+                    <li class="w3-padding">interstellar <span class="w3-tag w3-red w3-margin-left"> <a href="./INTERSTELLAR.HTML"></a> click here</span></li>
+                    <li class="w3-padding">batman <span class="w3-tag w3-red w3-margin-left"><a href="./BATMAN.HTML"></a> click here</span></li>
+                    <li class="w3-padding">venom 2 <span class="w3-tag w3-red w3-margin-left"><a href="./VENOM2.HTML"></a> click here</span></li>
+                </ul>
+
+              
+
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+            <h2 class="w3-wide w3-center">CONTACT</h2>
+            <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m6 w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker" style="width:30px"></i>KUWAIT ,84001<br>
+                    <i class="fa fa-phone" style="width:30px"></i> Phone: +965 0000000<br>
+                    <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+                </div>
+                <div class="w3-col m6">
+                    <form action="/action_page.php" target="_blank">
+                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                            </div>
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                            </div>
+                        </div>
+                        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                        <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+      
+    </div>
+
+   
+    <script>
+       
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
+
+       
+
+      
+    </script>
+   
+   <div id="googleMap" style="width:100%;height:400px;"></div>
+
+    <script>
+    function myMap() {
+    var mapProp= {
+      center:new google.maps.LatLng(51.508742,-0.120850),
+      zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    
+
+</body>
+
+</html>
